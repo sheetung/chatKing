@@ -33,13 +33,15 @@ class DefaultEventListener(EventListener):
             event = event_context.event
             message_chain = event.message_chain
             msg = str(message_chain).strip()
-            
-            group_id = str(event.group_id) if hasattr(event, 'group_id') else str(event.sender_id)
+            # 获取群聊ID
+            group_id = str(event.launcher_id)
+            # 获取用户信息
             user_id = str(event.sender_id)
-            user_name = str(event.sender_name) if hasattr(event, 'sender_name') else user_id
+            user_name = user_id
             msg_id = str(event.message_id) if hasattr(event, 'message_id') else str(uuid.uuid5(uuid.NAMESPACE_DNS, f"{group_id}_{user_id}_{msg}_{datetime.now().isoformat()}"))
             msg_time = datetime.now()
-            
+
+            print(f'group_id: {group_id}, user_id: {user_id}, user_name: {user_name}, msg_id: {msg_id}, msg_time: {msg_time}, msg: {msg}')
             if msg.startswith("rank"):
                 # 解析命令参数
                 parts = msg.split()
