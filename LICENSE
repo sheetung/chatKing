@@ -1,9 +1,3 @@
-# 核心规则说明（非协议正文，仅作快速指引）
-1. 允许非商业用途复制、修改、分发本代码（包括衍生版本）；
-2. 使用/分发时必须保留原作者署名（作者：[你的名字/昵称]，项目链接：[你的项目地址，可选]）；
-3. 禁止将本代码用于任何商业目的（包括售卖、商业产品集成、付费服务等）；
-4. 完整协议规则见下文官方文本。
-
 ===========================================================================
 Creative Commons Attribution-NonCommercial 4.0 International Public License
 ===========================================================================
@@ -89,7 +83,9 @@ Section 4 – Sui Generis Database Rights.
 Where the Licensed Rights include Sui Generis Database Rights that apply to Your use of the Licensed Material:
 
 a. for the avoidance of doubt, Section 2(a)(1) grants You the right to extract, reuse, reproduce, and Share all or a substantial portion of the contents of the database for NonCommercial purposes only;
+
 b. if You include all or a substantial portion of the database contents in a database in which You have Sui Generis Database Rights, then the database in which You have Sui Generis Database Rights (but not its individual contents) is Adapted Material; and
+
 c. You must comply with the conditions in Section 3(a) if You Share all or a substantial portion of the contents of the database.
 
 For the avoidance of doubt, this Section 4 supplements and does not replace Your obligations under this Public License where the Licensed Rights include other Copyright and Similar Rights.
@@ -137,6 +133,6 @@ c. No term or condition of this Public License will be waived and no failure to 
 d. Nothing in this Public License constitutes or may be interpreted as a limitation upon, or waiver of, any privileges and immunities that apply to the Licensor or You, including from the legal processes of any jurisdiction or authority.
 
 ===========================================================================
-Creative Commons is not a party to its public licenses. Notwithstanding, Creative Commons may elect to apply one of its public licenses to material it publishes and in those instances will be considered the “Licensor.” The text of the Creative Commons public licenses is dedicated to the public domain under the CC0 Public Domain Dedication. Except for the limited purpose of indicating that material is shared under a Creative Commons public license or as otherwise permitted by the Creative Commons policies published at creativecommons.org/policies, Creative Commons does not authorize the use of the trademark “Creative Commons” or any other trademark or logo of Creative Commons without its prior written consent including, without limitation, in connection with any unauthorized modifications to any of its public licenses or any other arrangements, understandings, or agreements concerning use of licensed material. For the avoidance of doubt, this paragraph does not form part of the public licenses.
+Creative Commons is not a party to its public licenses. Notwithstanding, Creative Commons may elect to apply one of its public licenses to material it publishes and in those instances will be considered the "Licensor." The text of the Creative Commons public licenses is dedicated to the public domain under the CC0 Public Domain Dedication. Except for the limited purpose of indicating that material is shared under a Creative Commons public license or as otherwise permitted by the Creative Commons policies published at creativecommons.org/policies, Creative Commons does not authorize the use of the trademark "Creative Commons" or any other trademark or logo of Creative Commons without its prior written consent including, without limitation, in connection with any unauthorized modifications to any of its public licenses or any other arrangements, understandings, or agreements concerning use of licensed material. For the avoidance of doubt, this paragraph does not form part of the public licenses.
 
 Creative Commons may be contacted at creativecommons.org.
