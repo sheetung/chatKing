@@ -3,17 +3,34 @@ kind: Plugin
 metadata:
   author: sheetung
   name: chatKing
-  repository: ''
-  version: 0.1.0
+  repository: 'https://github.com/sheetung/chatKing'
+  version: 0.1.4
   description:
-    en_US: chatKing
-    zh_Hans: chatKing
+    en_US: 'Generate group chat rank image'
+    zh_Hans: 群聊发言榜单生成
   label:
     en_US: chatKing
-    zh_Hans: chatKing
-  icon: assets/icon.svg
+    zh_Hans: 群聊发言榜单生成
+  icon: assets/score.png
 spec:
-  config: []
+  config: 
+    - name: api_url
+      type: string
+      label:
+        en_US: 'API URL'
+        zh_Hans: 'API 地址'
+      required: true
+      default: 'https://api.092399.xyz/api/generate_rank/generate_rank.php'
+    - name: access_token
+      type: string
+      label:
+        en_US: 'Access Token'
+        zh_Hans: '访问令牌'
+      required: true
+      default: ''
+      description:
+        en_US: 'Access Token for PHP API,contact author for free'
+        zh_Hans: 'PHP API 访问令牌，联系作者免费获取'
   components:
     EventListener:
       fromDirs:
