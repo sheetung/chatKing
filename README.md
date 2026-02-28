@@ -2,6 +2,8 @@
 
 A LangBot plugin for generating chat ranking leaderboards with images.
 
+[English](README.md)|[中文](./readme/README_zh_Hans.md)
+
 ## Features
 
 - Generates ranking leaderboards based on chat activity
