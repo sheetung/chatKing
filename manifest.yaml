@@ -4,7 +4,7 @@ metadata:
   author: sheetung
   name: chatKing
   repository: 'https://github.com/sheetung/chatKing'
-  version: 0.1.4
+  version: 0.1.7
   description:
     en_US: 'Generate group chat rank image'
     zh_Hans: 群聊发言榜单生成
@@ -20,7 +20,7 @@ spec:
         en_US: 'API URL'
         zh_Hans: 'API 地址'
       required: true
-      default: 'https://api.092399.xyz/api/generate_rank/generate_rank.php'
+      default: 'https://api.092399.xyz/generate_rank/generate_rank.php'
     - name: access_token
       type: string
       label:

@@ -1,10 +1,10 @@
 import requests
 import json
 
-def generate_rank_image(group_name, day_count, members, api_url, access_token):
+def generate_rank_image(group_id, day_count, members, api_url, access_token):
     """
     生成排行榜图片
-    :param group_name: 群名称
+    :param group_id: 群ID
     :param day_count: 统计天数
     :param members: 成员列表 [{"nickname": "xxx", "qq": "123", "count": 10}, ...]
     :param api_url: API 接口地址
@@ -14,7 +14,7 @@ def generate_rank_image(group_name, day_count, members, api_url, access_token):
     
     # 1. 构造发送给 PHP 的 JSON 数据
     payload_data = {
-        "group_name": group_name,
+        "group_id": group_id,
         "day_count": str(day_count), # 确保是字符串
         "list": members
     }
@@ -31,7 +31,7 @@ def generate_rank_image(group_name, day_count, members, api_url, access_token):
     }
     
     try:
-        print(f"🚀 正在请求服务器生成 [{group_name}] 的 {day_count}日榜单...")
+        print(f"🚀 正在请求服务器生成 [{group_id}] 的 {day_count}日榜单...")
         
         # 发送请求
         response = requests.post(api_url, data=post_params, headers=headers, timeout=30)

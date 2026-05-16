@@ -51,7 +51,7 @@ class DefaultEventListener(EventListener):
             msg_id = str(event.message_id) if hasattr(event, 'message_id') else str(uuid.uuid5(uuid.NAMESPACE_DNS, f"{group_id}_{user_id}_{msg}_{datetime.now().isoformat()}"))
             msg_time = datetime.now()
 
-            # print(f'event: {event}')
+            print(f'event: {event}')
             # print(f'group_id: {group_id}, user_id: {user_id}, user_name: {user_name}, msg_id: {msg_id}, msg_time: {msg_time}, msg: {msg}')
             # 解析 "1日发言榜"、"2日发言榜" 这样的命令格式
             match = re.match(r'(\d+)日发言榜', msg)
@@ -104,7 +104,7 @@ class DefaultEventListener(EventListener):
             })
         
         # 生成排行榜图片
-        image_content = generate_rank_image(f"群聊{group_id}", days, members, self.api_url, self.access_token)
+        image_content = generate_rank_image(group_id, days, members, self.api_url, self.access_token)
         
         if image_content:
             # 将图片内容转换为base64编码
